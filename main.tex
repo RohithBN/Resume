@@ -1,0 +1,218 @@
+
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue!50!black},
+    urlcolor={black}
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+
+  \textbf{{\LARGE Rohtih BN}} & Email: \href{mailto:rohithbn27@gmail.com}{rohithbn27@gmail.com}\\
+  \underline{\href{https://rohith-portfolio-theta.vercel.app}{Portfolio}} & \underline{\href{https://www.linkedin.com/in/rohith-bn-b9485b318/}{LinkedIn}} \\
+  \underline{\href{https://github.com/RohithBN}{Github: RohithBN}} & Mobile:~~~+91-861-829-4710
+\end{tabular*}
+
+
+	    
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Dayananda Sagar College Of Engineering}{CGPA: 9.72}
+      {Bachelor of Engineering-Information Science Engineering }{2022 - 2026}
+      \resumeSubheading
+        {Kumarans PU College}{CGPA: 9.82}
+      {12th Standard }{2020 - 2022}
+      \vspace{-5pt}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript,JavaScript,C++,Python,}
+     
+    \textbf{Technologies/Frameworks}{: React, NextJs, NodeJS} 
+     
+     \textbf{Databases/Tools}{: MongoDB, PostgreSQL, Appwrite, NeonDB} \\
+    
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+  
+%-----------PROJECTS-----------------
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Mystery-Message} $|$ \emph{TypeScript,NextJS,React,MongoDB,Next-Auth,shadcn}
+$|$
+\textmd{\href{https://github.com/RohithBN/Mystery-Message}{\underline{Github}}}
+$|$
+
+
+}{
+\begin{itemize}
+\item Developed a unique application allowing users to send \textbf{anonymous} messages to other registered users. The recipient can log in securely to view the messages sent to them, enhancing \textit{user privacy} and interaction through \textit{anonymous communication}. \item Uses\textit{Typescript} for backend services and \textit{MongoDB} for data storage and \textit{Next-auth} for user authentication.
+\item Integrates \textit{shadcn} components for a modern, accessible user interface, providing a smooth user experience alongside \textit{Tailwind CSS} styling to create a visually appealing and responsive design.
+\end{itemize}
+}
+\vspace{-10pt}
+
+
+\resumeSubItem{\textbf{BlogIt} $|$ \emph{React,Appwrite,Redux,TinyMCE}
+$|$
+\textmd{\href{https://github.com/RohithBN/Blog-React}{\underline{GitHub}}}
+
+}
+{
+\begin{itemize}
+\item A \textbf{dynamic blog} platform where users can \textbf{create} and \textbf{publish} their own blog posts. The platform is
+designed to allow users to \textbf{write}, \textbf{format}, and \textbf{edit} their content, making it easy for anyone to share their thoughts or experiences in a structured way.
+\item Built using \textit{Typescript} for backend services and \textit{Appwrite} for data storage and \textit{Tailwind CSS} for responsive and smooth user experience.
+\item The project integrates \textit{TinyMCE} for rich-text editing, \textit{React-hook-form} form handling, and state management for enhanced user interactions and content management.
+
+\end{itemize}
+}
+
+\vspace{-10pt}
+\resumeSubItem{\textbf{MediaMind} $|$ \emph{NextJS,NeonDB,Cloudinary,Prisma,Clerk}
+$|$
+\textmd{\href{https://github.com/RohithBN/cloudinary-saas}{\underline{GitHub}}}
+
+}
+{
+\begin{itemize}
+\item The app provides a comprehensive suite of media processing tools, allowing users to \textbf{resize} images for specific platforms like Instagram Stories, Facebook posts, and website banners, \textbf{compress videos} for easier sharing and storage, and \textbf{removes background} from images, making it an all-in-one solution for \textbf{media enhancement} and optimization.
+\item The project uses \textit{NextJS} for full-stack development, \textit{NeonDB} for serverless PostgreSQL database management, \textit{Cloudinary} for media hosting and processing, \textit{Prisma} for efficient database queries, and \textit{Clerk} for secure user authentication
+
+\end{itemize}
+}
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+
+
+
+% %-----------LICENSE AND CERTIFICATIONS-----------------
+ \vspace{-10pt}
+\section{LICENSE AND CERTIFICATIONS}
+\resumeSubHeadingListStart
+\resumeSubItem{Complete web development course - October 2024}{}
+\vspace{2pt}
+\resumeSubItem{Python Fundamentals $|$  Infosys $|$  Springboard - August 2023}{}
+\vspace{2pt}
+\resumeSubItem{Azure Data and AI Masterclass $|$  Microsoft - August 2023}{}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+
+
+     \vspace{10pt}
+     \section{COMMUNITY EXPERIENCE}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {LITSOC, DSCE}{Bengaluru, India}
+        {Member of the Literary Society of Dayananda Sagar College Of Engineering.}{Jan 2023-Present}
+    \resumeSubheading
+        {Public Speaking Association, DSCE}{Bengaluru, India}
+        {Head of the Official Public Speaking Association of Dayananda Sagar College of Engineering.}{July 2024-Present}
+\resumeSubHeadingListEnd
+
+
+
+\end{document}
